@@ -1014,7 +1014,7 @@ define([
       /** @property {String} blank */
       blank: blankHTML,
       /** @property {String} emptyPara */
-      emptyPara: '<p>' + blankHTML + '</p>',
+      emptyPara: '<div>' + blankHTML + '</div>',
       makePredByNodeName: makePredByNodeName,
       isEditable: isEditable,
       isControlSizing: isControlSizing,
