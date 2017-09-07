@@ -261,6 +261,7 @@ define([
         return function (value) {
           beforeCommand();
           document.execCommand(sCmd, false, value);
+          
           afterCommand(true);
         };
       })(commands[idx]);

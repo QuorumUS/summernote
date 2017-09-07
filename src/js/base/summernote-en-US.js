@@ -11,7 +11,7 @@ define([
         bold: 'Bold',
         italic: 'Italic',
         underline: 'Underline',
-        clear: 'Remove Font Style',
+        clear: 'Clear Formatting from Selected Text',
         height: 'Line Height',
         name: 'Font Family',
         strikethrough: 'Strikethrough',
