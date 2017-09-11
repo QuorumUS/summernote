@@ -2188,7 +2188,7 @@
       options: {
         help: 'Help',
         fullscreen: 'Full Screen',
-        codeview: 'Code View!!!'
+        codeview: 'Code View'
       },
       paragraph: {
         paragraph: 'Paragraph',
