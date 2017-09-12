@@ -1481,7 +1481,7 @@
       /** @property {String} blank */
       blank: blankHTML,
       /** @property {String} emptyPara */
-      emptyPara: '<div>' + blankHTML + '</div>',
+      emptyPara: blankHTML + '<br/>',
       makePredByNodeName: makePredByNodeName,
       isEditable: isEditable,
       isControlSizing: isControlSizing,
@@ -2111,7 +2111,7 @@
         bold: 'Bold',
         italic: 'Italic',
         underline: 'Underline',
-        clear: 'Remove Font Style',
+        clear: 'Clear All Formatting',
         height: 'Line Height',
         name: 'Font Family',
         strikethrough: 'Strikethrough',
