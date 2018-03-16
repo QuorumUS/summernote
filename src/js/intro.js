@@ -25,6 +25,5 @@
 
     // initialize summernote with a global version of jquery
     factory(global.$);
-  }
 }(function ($) {
   'use strict';
