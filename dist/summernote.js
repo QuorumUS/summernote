@@ -6,7 +6,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license./
  *
- * Date: 2018-03-16T19:34Z
+ * Date: 2018-03-16T19:49Z
  */
 (function (factory) {
   // Change by Jonathan Mares
