@@ -2853,7 +2853,7 @@
 
         // wrap with paragraph
         if (inlineSiblings.length) {
-          var para = dom.wrap(list.head(inlineSiblings), 'p');
+          var para = dom.wrap(list.head(inlineSiblings), 'div');
           dom.appendChildNodes(para, list.tail(inlineSiblings));
         }
 
@@ -3656,7 +3656,7 @@
         // LI to P
         if (isEscapseToBody || !dom.isList(headList.parentNode)) {
           paras = paras.map(function (para) {
-            return dom.replace(para, 'P');
+            return dom.replace(para, 'DIV');
           });
         }
 
@@ -3750,7 +3750,7 @@
 
           // replace empty heading, pre or custom-made styleTag with P tag
           if ((dom.isHeading(nextPara) || dom.isPre(nextPara) || dom.isCustomStyleTag(nextPara)) && dom.isEmpty(nextPara)) {
-            nextPara = dom.replace(nextPara, 'p');
+            nextPara = dom.replace(nextPara, 'div');
           }
         }
       // no paragraph: insert empty paragraph
@@ -4788,7 +4788,7 @@
     };
 
     this.formatPara = function () {
-      this.formatBlock('P');
+      this.formatBlock('DIV');
     };
     context.memo('help.formatPara', lang.help.formatPara);
 
