@@ -308,13 +308,14 @@ define([
     });
 
     describe('wrapBodyInlineWithPara', function () {
-      it('should insert an empty paragraph when there is no contents', function () {
+      // updated by Jonathan Mares
+      it('should insert an empty div when there is no contents', function () {
         var $cont = $('<div class="note-editable"></div>');
 
         var rng = range.create($cont[0], 0);
         rng.wrapBodyInlineWithPara();
 
-        expect($cont.html()).to.equalsIgnoreCase('<p><br></p>');
+        expect($cont.html()).to.equalsIgnoreCase('<div><br></div>');
       });
 
       it('should wrap text with paragraph for text', function () {

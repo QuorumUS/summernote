@@ -9,16 +9,21 @@
  * Date: @DATE
  */
 (function (factory) {
-  /* global define */
-  if (typeof define === 'function' && define.amd) {
-    // AMD. Register as an anonymous module.
-    define(['jquery'], factory);
-  } else if (typeof module === 'object' && module.exports) {
-    // Node/CommonJS
-    module.exports = factory(require('jquery'));
-  } else {
+  // Change by Jonathan Mares
+  // Comment out this initializing logic and force using the global.$ version of
+  // jquery. Every jquery extension must use the same version of jquery or we don't
+  // things to run properly
+  // /* global define */
+  // if (typeof define === 'function' && define.amd) {
+  //   // AMD. Register as an anonymous module.
+  //   define(['jquery'], factory);
+  // } else if (typeof module === 'object' && module.exports) {
+  //   // Node/CommonJS
+  //   module.exports = factory(require('jquery'));
+  // } else {
     // Browser globals
-    factory(window.jQuery);
-  }
+
+    // initialize summernote with a global version of jquery
+    factory(global.$);
 }(function ($) {
   'use strict';
